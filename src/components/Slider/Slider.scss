@@ -1,0 +1,80 @@
+.slider {
+  width: 208px;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  z-index: 999;
+}
+.transform {
+  width: 77px;
+
+  .menu-item {
+    &.link {
+      width: 45px;
+    }
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+.logo {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: right;
+
+  &.link {
+    width: 170px;
+    padding: 10px 10px 10px 0;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  &.username {
+    font-size: 16px;
+    padding: 30px 10px 15px 0;
+  }
+  &.exit {
+    cursor: pointer;
+    display: flex;
+    width: 180px;
+    padding: 10px 10px 10px 0;
+    margin: 10px 0 10px 0;
+  }
+}
+
+.menu-item {
+  &.active {
+    background: var(--secondary-color);
+  }
+}
+.menu-item.active * {
+  color: var(--on-color);
+  fill: var(--on-color);
+}
+.trigger-div {
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  right: 70px;
+  transform: translateX(50%);
+  font-weight: 200;
+  font-size: 16px;
+}
+.arrow {
+  background: var(--secondary-light-color);
+  padding: 3px;
+  border-radius: 8px;
+
+  &.left {
+    margin-right: -50px;
+  }
+}
